@@ -1,5 +1,6 @@
 import requests
 import time
+import random
 import json
 import os
 from colorama import init, Fore
@@ -62,7 +63,7 @@ clear_interval = config["clear_interval"]
 speed_rotator = config["speed_rotator"]
 status_sequence = config["status_sequence"]
 
-status_count = 0  
+status_count = random.randint(0, len(status_sequence))
 emoji_count = 0
 
 while True:
@@ -98,6 +99,9 @@ while True:
     status_count += 1
     emoji_count += 1
 
-    time.sleep(speed_rotator)
+    if speed_rotator > 0:
+        time.sleep(speed_rotator)
+    else:
+        quit()
     if clear_enabled and status_count % clear_interval == 0:
         clear_console()

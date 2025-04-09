@@ -1,19 +1,13 @@
-<div id="top"></div>
-<br/>
-<div align="center">
-  
-  <h2 align="center">🔄️ Discord Status Rotator</h3>
+<h1 align="center">🔄️ Discord Status Rotator</h1>
 
-  <p align="center">
-    This script allows you to change the status of your Discord account automatically from the statuses defined in a text file.
-  </p>
-</div>
+<p align="center">
+  This script allows you to change the status of your Discord account automatically from the statuses defined in a text file.
+</p>
 
----------------------------------------
+## 📂 Requirements & Execute
 
-### 📂 Requirements & Execute
-- Python 3.x 
-- Required packages: ``requests colorama``
+- Python 3.x
+- Required packages: `requests colorama`
 
 Clone this repository:
 
@@ -24,57 +18,49 @@ git clone https://github.com/RELIHR/Discord-Status-Changer.git
 You can install the necessary packages by running the following command:
 
 ```bash
-pip install requests colorama
+pip install -r requirements.txt
 ```
+
 Execute the script:
 
 ```bash
 python main.py
 ```
----------------------------------------
 
-### 🔍 Usage
+## 🔍 Usage
 
-Use the code with caution. ⚠️
-
+⚠️ Use the code with caution!
 
 - `text.txt` file containing the states you want to set in Discord, one per line.
 
 - `emojis.txt` file if you want to add rotating emojis, including nitro emojis.
 
-Nitro format: `name:id`
-
+Nitro format: `name:id`  
 Format without nitro (only the emoji): `😀`
 
----------------------------------------
-
-### ⚙️ Configuration
+## ⚙️ Configuration
 
 - token: Your Discord token account.
+
 - status_sequence: Rotate the status (online, dnd, idle, offline). You can have one fixed by removing the others and leaving only the one you want.
+
 - clear_enabled: Enables or disables console clearing after a certain number of status changes.
+
 - clear_interval: Number of state changes after which the console will be cleared.
+
 - speed_rotator: Time interval between each state change (in seconds).
 
----------------------------------------
+## 📃 Changelogs
 
-### 📃 Changelogs
+- `(06/04/24) You can now rotate the status (🟢 online, ⛔ dnd, 🟠 idle, 🌑 offline). | [Feature]`
 
-```
-(06/04/24)
-↗️ - You can now rotate the status (🟢online, ⛔dnd, 🟠idle, 🌑offline). | [Feature]
-(01/04/24)
-✅ - Fixed encoding (UTF-8). | [Error]
-(12/03/24)
-↗️ - Now you can rotate emojis (including nitro emojis). | [Feature]
-```
+- `(01/04/24) Fixed encoding (UTF-8). | [Error]`
 
----------------------------------------
+- `(12/03/24) Now you can rotate emojis (including nitro emojis). | [Feature]`
 
-### 🤝 Contribution
+## 🤝 Contribution
 If you find any bugs or have any suggestions for improvement, feel free to open an issue or submit a pull request!
 
-
-### 📖 License
+## 📖 License
 
 This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.👀
